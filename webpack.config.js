@@ -10,7 +10,9 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, '/'),
         compress: true,
-        port: 9000
+        port: 9000,
+        publicPath: "/public/js/",
+        watchContentBase: true
     },
     module: {
         rules: [
@@ -23,6 +25,12 @@ module.exports = {
                             presets: ['@babel/preset-env'] 
                         }
                     }
+            },
+            {
+                enforce: 'pre',
+                test: /\.js$/,
+                exclude: /(node_modules)/,
+                loader: 'eslin-loader'
             }
         ]
     }

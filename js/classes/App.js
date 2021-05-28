@@ -1,20 +1,16 @@
-import { datosCita, nuevaCita } from '../funciones.js';
-import { 
-    mascotaInput, 
-    propietarioInput, 
-    telefonoInput, 
-    fechaInput, 
-    horaInput, 
-    sintomasInput, 
-    formulario 
-} from '../selectores.js';
+/* eslint-disable indent */
+import { datosCita, nuevaCita } from '../funciones';
+import {
+  mascotaInput, propietarioInput, telefonoInput, fechaInput, horaInput,
+  sintomasInput, formulario,
+} from '../selectores';
 
 class App {
+  constructor() {
+    this.initApp();
+  }
 
-    constructor() {
-        this.initApp();
-    }
-
+    // eslint-disable-next-line class-methods-use-this
     initApp() {
         mascotaInput.addEventListener('change', datosCita);
         propietarioInput.addEventListener('change', datosCita);
