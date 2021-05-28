@@ -30,7 +30,10 @@ module.exports = {
                 enforce: 'pre',
                 test: /\.js$/,
                 exclude: /(node_modules)/,
-                loader: 'eslin-loader'
+                loader: 'eslin-loader',
+                options: {
+                    fix: true
+                }
             }
         ]
     }

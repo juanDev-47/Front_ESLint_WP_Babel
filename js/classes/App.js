@@ -21,9 +21,7 @@ class App {
 
         // Formulario para nuevas citas
         formulario.addEventListener('submit', nuevaCita);
-
-    }
-
+  }
 }
 
 export default App;
