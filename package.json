@@ -1,0 +1,30 @@
+{
+  "name": "front_profesional",
+  "version": "1.0.0",
+  "description": "Aprendiendo webpack babel e eslint",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel entrada.js --out-file salida.js --presets=@babel/preset-env",
+    "webpack": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanDev-47/Front_ESLint_WP_Babel.git"
+  },
+  "author": "Juan Pablo Arenas Velez juanDev-47",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanDev-47/Front_ESLint_WP_Babel/issues"
+  },
+  "homepage": "https://github.com/juanDev-47/Front_ESLint_WP_Babel#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
